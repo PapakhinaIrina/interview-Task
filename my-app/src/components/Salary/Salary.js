@@ -1,5 +1,6 @@
 import React, { useEffect, useState }from "react";
-import './style.css'
+import { Icon } from '@iconify/react';
+import './style.scss'
 
 
 export default function Salary () {
@@ -43,9 +44,15 @@ const changeInput = (e) => {
 
         <div>
         <input className="mrot" name='1' type="radio" checked={checked === 'mrot'}  id="flexCheckDefault" onClick={() => setChecked('mrot')}/>
-          <label class="form-check-label" for="flexCheckDefault">
+          <span className="formCheckLabel" for="flexCheckDefault">
           МРОТ
-          </label>
+          <div class="tooltip"> 
+            <div class="tooltiptext">
+              <p>МРОТ - минимальный размер оплаты труда. Разный для разных регионов. </p>
+            </div>
+              <Icon icon="ph:info-thin" width={15}></Icon>
+          </div>
+          </span>
         </div>
 
         <div>

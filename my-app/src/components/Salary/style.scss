@@ -96,3 +96,36 @@
   outline: 1px solid gray;
   outline-offset: 3px;
 }
+
+.tooltip{
+  position: absolute;
+  margin-right: 0;
+  margin-left: 50px;
+  margin-top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.tooltiptext{
+  width: 150px;
+  height: 50px; 
+  position: absolute;
+  display: none;
+  font-size: 9px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(154, 112, 186);
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+.tooltip:hover{
+  .tooltiptext{
+    display: block;
+  }
+}
+
+.formCheckLabel{
+  display: inline-flex;
+}
